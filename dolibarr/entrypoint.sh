@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/sh 
 
 set -e 
 # Create a default config
@@ -53,4 +53,5 @@ fi
 
 chown -R www-data:www-data /var/www/html
 . /etc/apache2/envvars
+echo "Args: ${@}"
 exec "$@"
