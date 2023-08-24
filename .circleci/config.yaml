@@ -1,0 +1,26 @@
+version: 2.1
+
+orbs:
+  gcp-cli: circleci/gcp-cli@3.0.1
+  
+executors:
+  docker-publisher:
+    machine:
+        image: ubuntu-2004:202010-01
+jobs:
+    build:
+      executor: docker-publisher
+      steps:
+        - checkout  
+        - run:
+            name: List all files 
+            command: ls 
+
+workflows:
+  dolibarr:
+    jobs:
+       - build:       
+          filters:
+             branches:
+                only:
+                   - development
