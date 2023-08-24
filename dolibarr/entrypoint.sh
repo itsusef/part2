@@ -51,7 +51,7 @@ php step5.php 0 0 ${LANG:-fr_FR} set ${DOLI_ADMIN_LOGIN} ${DOLI_ADMIN_PASSWORD} 
 
 fi
 
-chown -R www-data:www-data /var/www/html
+chown -R www-data:www-data /var/www/
 . /etc/apache2/envvars
 echo "Args: ${@}"
 exec "$@"
