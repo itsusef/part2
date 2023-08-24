@@ -5,7 +5,7 @@ metadata:
   name: dolibarr-configmap
 data:
   DOLI_DB_HOST: "db" 
-  DOLI_URL_ROOT: "http://35.222.55.102"
+  DOLI_URL_ROOT: "http://34.72.163.25"
   LANG: "fr_FR"
   # Database configurations
   DOLI_DB_TYPE: "mysqli"
