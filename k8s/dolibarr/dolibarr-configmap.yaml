@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dolibarr-configmap
+data:
+  DOLI_DB_HOST: "db" 
+  DOLI_URL_ROOT: "http://localhost"
+  LANG: "fr_FR"
+  # Database configurations
+  DOLI_DB_TYPE: "mysqli"
+  DOLI_DB_PORT: "3306"
+  DOLI_DB_USER: "dolibarr"
+  DOLI_DB_NAME: "dolibarr"
+  # Admin
+  DOLI_ADMIN_LOGIN: "admin"
