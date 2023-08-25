@@ -71,4 +71,4 @@ EXPOSE 80
 
 # # Start the Apache web server
 ENTRYPOINT ["./entrypoint.sh"]
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
