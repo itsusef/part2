@@ -4,7 +4,7 @@ metadata:
   name: dolibarr-docs
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
-      storage: 2Gi
+      storage: 5Gi

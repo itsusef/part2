@@ -5,7 +5,7 @@ metadata:
   name: dolibarr-conf
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
-      storage: 2Gi
+      storage: 5Gi
