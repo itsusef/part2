@@ -34,7 +34,7 @@ spec:
           imagePullPolicy: Always
           resources: {}
           volumeMounts:
-            - mountPath: /var/www/html/htdocs/conf/
+            - mountPath: /var/www/html/
               name: dolibarr-conf
             - mountPath: /var/www/documents
               name: dolibarr-docs

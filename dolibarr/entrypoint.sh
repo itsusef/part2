@@ -3,6 +3,7 @@ set -e
 
 if [ ! -d /var/www/html/htdocs ]; then
 tar -xzf /tmp/dolibarr-${DOLI_VERSION}.tgz -C ${APACHE_DOCUMENT_ROOT} --strip-components=1
+chown -R www-data:www-date /var/www/
 fi
 
 
