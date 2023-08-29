@@ -17,21 +17,21 @@ services:
     networks:
       - dolibarrNetwork
       
-  # dolibarr:
-  #   container_name: dolibarr
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "8200:80"
-  #   volumes:
-  #     - dolibarr_conf:/var/www/html/htdocs/
-  #     - dolibarr_docs:/var/www/documents
-  #   networks:
-  #     - dolibarrNetwork
-  #   depends_on:
-  #     db:
-  #       condition: service_started
+  dolibarr:
+    container_name: dolibarr
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8200:80"
+    volumes:
+      - dolibarr_conf:/var/www/html/htdocs/
+      - dolibarr_docs:/var/www/documents
+    networks:
+      - dolibarrNetwork
+    depends_on:
+      db:
+        condition: service_started
 
 
   phpmyadmin:
